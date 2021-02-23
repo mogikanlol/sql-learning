@@ -1,0 +1,55 @@
+
++ general datatypes in postgresql
++ constraints: primary key, foreign key, check (Enum)
+two-column primary key
++ not null
+
+Foreign Key: you can't insert a record that references non-existing row
+- So it checks every time I insert something
+
+
+
+Insert:
+
+INSERT INTO <table name> (columns)
+VALUES (values);
+
+Update:
+UPDATE <table name> SET <column name> = <value> WHERE ...
+
+Delete:
+DELETE FROM <table name> WHERE ...
+
+
+
+Create Table
+Alter Table
+Drop Table
+
+Auto-increment
+Sequence
+
+When using auto-increment or sequence TRY to insert null and see what happens
+
+
+
+CHECK may foreign key be NULL!!!!!
+
+
+DISTINCT, ALL
+
+
+Query Clauses:
+	- SELECT
+	- FROM
+	- WHERE
+	- GROUP BY
+	- HAVING
+	- ORDER BY
+
+
+Tables:
+	- Permanent tables (created using CREATE TABLE statement)
+	- Derived tables (rows returned by a subquery and held in memory)
+	- Temporary tables (volatile data held in memory)
+	- Virtual tables (created using the CREATE VIEW statement)
